@@ -11,25 +11,25 @@ import org.keycloak.models.KeycloakSessionFactory;
  */
 public class SessionRestrictorEventListenerProviderFactory implements EventListenerProviderFactory {
 
-    @Override
-    public EventListenerProvider create(KeycloakSession session) {
-        return new SessionRestrictorEventListenerProvider(session);
-    }
+  @Override
+  public EventListenerProvider create(KeycloakSession session) {
+    return new SessionRestrictorEventListenerProvider(session);
+  }
 
-    @Override
-    public void init(Config.Scope config) {
-    }
+  @Override
+  public void init(Config.Scope config) {
+  }
 
-    @Override
-    public void postInit(KeycloakSessionFactory factory) {
-    }
+  @Override
+  public void postInit(KeycloakSessionFactory factory) {
+  }
 
-    @Override
-    public void close() {
-    }
+  @Override
+  public void close() {
+  }
 
-    @Override
-    public String getId() {
-        return "session-restrictor";
-    }
+  @Override
+  public String getId() {
+    return "session-restrictor";
+  }
 }
